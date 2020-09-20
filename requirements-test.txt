@@ -1,0 +1,4 @@
+pytest
+pylint
+pytest-pylint
+pytest-cov

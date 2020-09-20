@@ -1,0 +1,21 @@
+# visual studio code
+.vscode/
+
+# Python
+venv/
+virtualenv/
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+build/
+dist/
+*.egg-info/
+docs/build_*
+.eggs/
+
+# Python Coverage
+.coverage
+coverage/*
+
+# misc
+.DS_Store
