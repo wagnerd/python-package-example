@@ -31,4 +31,4 @@ def entry_one() -> None:
     Simple example for entry-point method
     """
     print("This is entry-point entry_one")
-    return
+   # return # Remove comment for Pylint error example

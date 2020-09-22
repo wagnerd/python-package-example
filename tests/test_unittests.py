@@ -15,5 +15,5 @@ def test_unittest_tow() -> None:
     Simple unittest example which fails
     """
     print("This is test_unittest_tow")
-    assert False
+    assert True # Change to 'False' for pytest error example
     

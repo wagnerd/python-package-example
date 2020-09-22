@@ -17,5 +17,8 @@ docs/build_*
 .coverage
 coverage/*
 
+# Python tox
+.tox
+
 # misc
 .DS_Store
