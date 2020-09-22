@@ -41,3 +41,8 @@ You can create the coverage report with:
 ```bash
 coverage html
 ```
+
+There is also an example for mypy, which can be run with:
+```bash
+mypy src tests
+```
