@@ -3,8 +3,15 @@
 ## Development Environment
 
 First create a virtual environment:
+
 ```bash
 python -m venv venv
+```
+
+If the venv is not activated automatically, run:
+
+```bash
+venv\Scripts\activate
 ```
 
 You can simply install the package in editable mode from inside the venv:
@@ -23,11 +30,16 @@ If you want to create the package run:
 python setup.py sdist
 ```
 
-This project uses tox to run 
-* pytest
-* pylint
-* coverage
-* mypy
+This project uses tox to run different environments:
+
+* testenv:
+  * pytest
+  * pylint
+  * coverage
+  * mypy
+
+* testenv:doc:
+  * Sphinx
 
 So in order to run the test simply install tox in your venv:
 
@@ -40,7 +52,7 @@ After that just run
 tox
 ```
 
-Look at the [tox.ini](tox.ini) file if you want to know what
+Look at the [tox.ini](tox.ini) file at the [testenv] section if you want to know what
 is executed inside the tox environment and which python versions are tested.
 
 The example output for a successfull run below:
@@ -89,3 +101,12 @@ ______________________________________________________________________________ s
   py3: commands succeeded
   congratulations :)
 ```
+
+For the creation of the documentation we use the tox section [testenv:doc] which can simply be run with
+
+```bash
+tox -e doc
+```
+
+This will create a folder **.tox\doc_out** which contains the 
+created documentation and can be exported.
