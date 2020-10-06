@@ -1,6 +1,6 @@
 """
 module1.module1_entry_points.py
-~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This module contains the entry-point functions for the module1 module.
 The entry-points can be referenced inside the setup.cfg and will be created during
